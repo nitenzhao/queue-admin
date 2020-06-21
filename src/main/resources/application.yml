@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: template-admin
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/queue?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: bondeasy
+    password: e@syB0nd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+pagehelper:
+  helperDialect: mysql
+  supportMethodsArguments: true
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.loyo.queue
